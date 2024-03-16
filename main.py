@@ -25,5 +25,6 @@ class Product:
 
 
 if __name__ == '__main__':
-    cat1 = Category('электроника', 'описание')
+    category1 = Category('электроника', 'описание')
     prod1 = Product('ноутбук', 'описание', '25000,00', 15)
+

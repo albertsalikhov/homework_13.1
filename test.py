@@ -4,13 +4,17 @@ from main import Category, Product
 
 
 @pytest.fixture()
-def cat():
+def category():
     return Category('электроника', 'описание')
 
 
-def test_cat(cat):
-    assert cat.name == 'электроника'
-    assert cat.descriptions == 'описание'
+
+
+
+def test_category(category):
+    assert category.name == 'электроника'
+    assert category.descriptions == 'описание'
+    assert len(category.categories) == 0
 
 @pytest.fixture()
 def prod():
